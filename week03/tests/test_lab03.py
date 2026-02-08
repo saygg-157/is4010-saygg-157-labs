@@ -1,7 +1,7 @@
 # test_lab03.py
 import random
 from unittest.mock import patch
-from lab03 import generate_mad_lib, guessing_game
+from week03.lab03 import generate_mad_lib, guessing_game
 
 def test_generate_mad_lib():
     """
@@ -63,7 +63,7 @@ def test_guessing_game():
     4. Attempt counting works correctly
     """
     # Mock random.randint in the lab03 module to return a predictable number (50)
-    with patch('lab03.random.randint', return_value=50):
+    with patch('week03.lab03.random.randint', return_value=50):
         # Mock input() to simulate user guesses: too high, too low, correct
         with patch('builtins.input', side_effect=['75', '25', '50']):
             # Mock print() to capture output
@@ -92,7 +92,7 @@ def test_guessing_game():
                 assert contains_range or contains_feedback, "Game should provide range info or feedback"
     
     # Test edge case: immediate correct guess
-    with patch('lab03.random.randint', return_value=42):
+    with patch('week03.lab03.random.randint', return_value=42):
         with patch('builtins.input', side_effect=['42']):
             with patch('builtins.print') as mock_print:
                 guessing_game()
