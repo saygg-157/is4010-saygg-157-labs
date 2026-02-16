@@ -1,6 +1,6 @@
 # test_lab05.py
 import pytest
-from lab05 import calculate_average_age, get_active_user_emails
+from week05.lab05 import calculate_average_age, get_active_user_emails
 
 
 @pytest.fixture
