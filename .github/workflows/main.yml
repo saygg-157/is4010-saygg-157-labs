@@ -33,36 +33,36 @@ jobs:
       # Step 4: Run tests for weeks with test files
       - name: Test Week 00
         run: |
-          export PYTHONPATH="${PYTHONPATH}:."
+          export PYTHONPATH="${PYTHONPATH}:${PWD}"
           pytest week00/tests/test_lab00.py -v
         continue-on-error: true
 
       - name: Test Week 03
         run: |
-          export PYTHONPATH="${PYTHONPATH}:."
+          export PYTHONPATH="${PYTHONPATH}:${PWD}"
           pytest week03/tests/test_lab03.py -v
         continue-on-error: true
 
       - name: Test Week 04
         run: |
-          export PYTHONPATH="${PYTHONPATH}:."
+          export PYTHONPATH="${PYTHONPATH}:${PWD}"
           pytest week04/tests/test_lab04.py -v
         continue-on-error: true
 
       - name: Test Week 05
         run: |
-          export PYTHONPATH="${PYTHONPATH}:."
+          export PYTHONPATH="${PYTHONPATH}:${PWD}"
           pytest week05/tests/test_lab05.py -v
         continue-on-error: true
 
       - name: Test Week 06
         run: |
-          export PYTHONPATH="${PYTHONPATH}:."
+          export PYTHONPATH="${PYTHONPATH}:${PWD}"
           pytest week06/tests/test_lab06.py -v
         continue-on-error: true
 
       - name: Test Week 07
         run: |
-          export PYTHONPATH="${PYTHONPATH}:."
+          export PYTHONPATH="${PYTHONPATH}:${PWD}"
           pytest week07/tests/test_lab07.py -v
         continue-on-error: true 
