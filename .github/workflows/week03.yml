@@ -21,4 +21,4 @@ jobs:
       - name: Run Week 03 tests
         run: |
           export PYTHONPATH="${PYTHONPATH}:week03"
-          pytest week03/tests/ -v
+          pytest week03/test_lab03.py -v

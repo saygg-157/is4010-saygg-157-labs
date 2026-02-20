@@ -1,6 +1,6 @@
 # test_lab04.py
 import pytest
-from lab04 import find_common_elements, find_user_by_name, get_list_of_even_numbers
+from week04.lab04 import find_common_elements, find_user_by_name, get_list_of_even_numbers
 
 
 # Tests for find_common_elements
